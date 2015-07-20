@@ -1,7 +1,13 @@
 .widget_indexdata_widget {
-  clear: both;
-  width: 100%;
-  display: inline-block;
+  padding: 0;
+  width: 660px;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+}
+
+.widget.widget_indexdata_widget a {
+  color: black;
 }
 
 .mkwsSummary {
@@ -20,6 +26,10 @@
 .mkws-field-date,
 .mkws-field-title {
   display: block;
+}
+
+.mkws-field-description {
+  display: none;
 }
 
 .mkws-field-title {
