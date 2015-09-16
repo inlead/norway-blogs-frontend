@@ -1,25 +1,22 @@
 .widget_indexdata_widget {
   clear: both;
+  width: 100%;
   display: inline-block;
 }
 
-#indexdata_widget-5 h3.widgettitle {
-  font-weight: 700;
-  margin-bottom: 25px;
-  font-size: 1.5em;
-  background-color: inherit;
-  color: inherit;
+.widget.widget_indexdata_widget a {
+  color: black;
 }
 
 .mkwsSummary {
-  padding: 0;
+  padding: 10px 0;
   clear: both;
   min-height: 101px;
 }
 
 .mkws-field-thumb > img {
-  float: left;
-  margin-right: 10px;
+  float: right;
+  margin-left: 10px;
   width: 100px;
 }
 
@@ -27,6 +24,10 @@
 .mkws-field-date,
 .mkws-field-title {
   display: block;
+}
+
+.mkws-field-description {
+  display: none;
 }
 
 .mkws-field-title {
@@ -46,14 +47,22 @@
   width: 100%;
 }
 
+.mkws-details table {
+  border-collapse: collapse;
+}
+
+.mkws-details table tr {
+  border-top: 1px dotted gray;
+}
+
 .mkws-details table th {
   width: 20%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-align: left;
 }
 
-.fullwidth,
-#indexdata_widget-5.widget_indexdata_widget {
+.fullwidth {
   width: 100%;
 }
 
@@ -96,7 +105,8 @@
 
 .mkws-indexdata-artist-block li {
   clear: both;
-  height: 51px; 
+  min-height: 51px;
+  display: block !important; 
 }
 
 .mkws-indexdata-artist-block img.wimp-img {
@@ -122,3 +132,24 @@
   border-bottom: 1px solid #95a5a6;
 }
 
+.widget_indexdata_widget {
+  margin-top: 25px;
+}
+
+.widget_indexdata_widget .fullwidth .mkwsRecords {
+  padding: 5px 0 0 0;
+  border-top: 5px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+#content #contentleft .widget_indexdata_widget h4 {
+  color: #000000;
+  font-size: 36px;
+  font-family: Helvetica, Arial, Trebuchet MS, Verdana;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 0px 0px 15px 0px;
+  padding: 0px 0px 0px 0px;
+  line-height: 36px;
+}

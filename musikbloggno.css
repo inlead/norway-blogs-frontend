@@ -1,14 +1,7 @@
 .widget_indexdata_widget {
   clear: both;
+  width: 100%;
   display: inline-block;
-}
-
-#indexdata_widget-5 h3.widgettitle {
-  font-weight: 700;
-  margin-bottom: 25px;
-  font-size: 1.5em;
-  background-color: inherit;
-  color: inherit;
 }
 
 .mkwsSummary {
@@ -52,8 +45,7 @@
   text-transform: uppercase;
 }
 
-.fullwidth,
-#indexdata_widget-5.widget_indexdata_widget {
+.fullwidth {
   width: 100%;
 }
 
