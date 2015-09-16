@@ -1,7 +1,9 @@
 var mkws_config = {
-  pp2_hostname:  "sp-emusikk-no.indexdata.com", 
+  perpage_default: 6,
+  pp2_hostname:  "sp-emusikk-no.indexdata.com",
   sp_auth_credentials: "emusik_no462/emusik_no462" ,
-  sp_auth_query: "command=auth&action=login" 
+  sp_auth_query: "command=auth&action=login",
+  targetfilter: "categories=il_releases"
 };
 
 mkws.registerWidgetType('indexdata-artist-block', function () {
@@ -180,9 +182,9 @@ templates['summary'] = template({"1":function(depth0,helpers,partials,data) {
 
   return "  <a class=\"mkws-field-thumb\" href=\"#\" onclick=\""
     + alias1(((helper = (helper = helpers.detailClick || (depth0 != null ? depth0.detailClick : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"detailClick","hash":{},"data":data}) : helper)))
-    + "\">\n    <!-- <img src=\""
+    + "\">\n    <img src=\""
     + alias1(this.lambda(((stack1 = (depth0 != null ? depth0['md-thumburl'] : depth0)) != null ? stack1['0'] : stack1), depth0))
-    + "\" onerror=\"this.style.display='none'\"/> -->\n  </a>\n";
+    + "\" onerror=\"this.style.display='none'\"/> \n  </a>\n";
 },"3":function(depth0,helpers,partials,data) {
     var helper;
 
