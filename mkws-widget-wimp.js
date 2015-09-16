@@ -22,7 +22,7 @@ mkws.registerWidgetType('indexdata-artist-block', function () {
     </span>\
     <span class="right">\
       {{#if md-thumburl}}\
-        <img class="wimp-img" src="{{md-thumburl}}" />\
+        <img class="wimp-img" src="{{md-thumburl.[0]}}" />\
       {{/if}}\
     </span>\
   </li>\
