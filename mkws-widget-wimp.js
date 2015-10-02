@@ -15,7 +15,7 @@ mkws.registerWidgetType('indexdata-artist-block', function () {
   <li>\
     <span class="left">\
       {{#mkws-first md-electronic-url}}\
-        <a href="{{this}}">\
+        <a href="{{this}}" target="_blank">\
       {{/mkws-first}}\
       <div>{{md-title}}</div></a>\
       <div>{{#if md-date}}{{md-date}}{{/if}}</div>\
@@ -112,7 +112,7 @@ templates['details'] = template({"1":function(depth0,helpers,partials,data) {
 
   return "          <a href=\""
     + alias1(this.lambda((depth0 != null ? depth0['md-electronic-url'] : depth0), depth0))
-    + "\">"
+    + "\" target=\"_blank\">"
     + alias1((helpers['mkws-attr'] || (depth0 && depth0['mkws-attr']) || helpers.helperMissing).call(depth0,"@name",{"name":"mkws-attr","hash":{},"data":data}))
     + "</a>\n";
 },"20":function(depth0,helpers,partials,data) {
@@ -132,7 +132,7 @@ templates['details'] = template({"1":function(depth0,helpers,partials,data) {
 
   return "<table>\n  <tr>\n    <th>"
     + alias2((helpers['mkws-translate'] || (depth0 && depth0['mkws-translate']) || alias1).call(depth0,"Title",{"name":"mkws-translate","hash":{},"data":data}))
-    + "</th>\n    <td>\n      <a href=\"http://musikkhylla3.stg.easyting.dk/search/meta/?au="
+    + "</th>\n    <td>\n      <a href=\"http://www.musikkhylla.no/search/meta/?au="
     + alias2(((helper = (helper = helpers['md-author'] || (depth0 != null ? depth0['md-author'] : depth0)) != null ? helper : alias1),(typeof helper === alias3 ? helper.call(depth0,{"name":"md-author","hash":{},"data":data}) : helper)))
     + "&amp;ti="
     + alias2(((helper = (helper = helpers['md-title'] || (depth0 != null ? depth0['md-title'] : depth0)) != null ? helper : alias1),(typeof helper === alias3 ? helper.call(depth0,{"name":"md-title","hash":{},"data":data}) : helper)))
