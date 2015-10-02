@@ -3,7 +3,43 @@ var mkws_config = {
   pp2_hostname:  "sp-emusikk-no.indexdata.com",
   sp_auth_credentials: "emusik_no462/emusik_no462" ,
   sp_auth_query: "command=auth&action=login",
-  targetfilter: "categories=il_releases"
+  targetfilter: "categories=il_releases",
+  lang: "no",
+  language_no: {
+      "Authors": "Artister",
+      "Subjects": "Emner",
+      "Sources": "Kilder",
+      "Provider": "Kilder",
+      "source": "kilder",
+      "Facets": "Fasetter",
+      "Next": "Neste",
+      "Prev": "Forrige",
+      "Search": "S&oslash;k",
+      "Sort by": "Sorter etter",
+      "and show": "og vis",
+      "per page": "per side",
+      "Displaying": "Viser",
+      "to": "til",
+      "of": "av",
+      "found": "funnet",
+      "Title": "Tittel",
+      "Author": "Artist",
+      "author": "artist",
+      "Date": "Dato",
+      "Subject": "Emneord",
+      "subject": "emneord",
+      "Location": "Lokation",
+      "Locations": "Lokationer",
+      "Records": "Poster",
+      "Targets": "Baser",
+      "State": "Status",
+      "relevance": "Relevans",
+      "title": "Tittel",
+      "newest": "Nyeste",
+      "oldest": "Eldste",
+
+      "dummy": "dummy"
+  }
 };
 
 mkws.registerWidgetType('indexdata-artist-block', function () {
